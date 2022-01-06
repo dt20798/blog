@@ -1,0 +1,8 @@
+
+
+<%# app/views/todos/edit.html.erb %>
+<%= turbo_frame_tag @article do %>
+  <%= render "form", article: @article %>
+
+  <%= link_to 'Cancel', article_path(@article) %>
+<% end %>
